@@ -1,0 +1,1 @@
+const mockData = "mockData.json";
