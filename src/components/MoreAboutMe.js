@@ -9,8 +9,7 @@ import CodeIcon from 'material-ui-icons/Code';
 import * as Colors from './Colors';
 
 
-
-import { withStyles } from 'material-ui/styles';
+import {withStyles} from 'material-ui/styles';
 
 const style = theme =>({
     root: {

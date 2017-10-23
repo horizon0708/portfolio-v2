@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "async": "^2.5.0",
+    "front-matter": "^2.2.0",
+    "fs": "^0.0.1-security",
     "marked": "^0.3.6",
     "material-ui": "^1.0.0-beta.17",
     "material-ui-icons": "^1.0.0-beta.17",

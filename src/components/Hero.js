@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
-import { withStyles } from 'material-ui/styles';
+import {withStyles} from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
 import * as Color from './Colors';
+import * as Colors from './Colors';
 import background from '../data/harbour.jpg';
 import Grid from 'material-ui/Grid';
-import * as Colors from './Colors';
 
 const style = theme => ({
     root: {

@@ -1,19 +1,11 @@
-import React, { Component } from 'react';
-
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
-import Chip from 'material-ui/Chip';
+import React, {Component} from 'react';
 import Grid from 'material-ui/Grid';
 import Button from 'material-ui/Button';
-import { withStyles } from 'material-ui/styles';
+import {withStyles} from 'material-ui/styles';
 import KeyboardArrowLeft from 'material-ui-icons/KeyboardArrowLeft';
-import Typography from 'material-ui/Typography';
-
-import classnames from 'classnames';
-import IconButton from 'material-ui/IconButton';
-import Collapse from 'material-ui/transitions/Collapse';
-import Dialog, { DialogTitle } from 'material-ui/Dialog';
 
 import * as Colors from '../../Colors';
+
 const styles = theme => ({
     buttonIcon : {
         marginRight: 10,

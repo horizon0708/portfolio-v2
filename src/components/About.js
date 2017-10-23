@@ -2,11 +2,10 @@ import React, {Component} from 'react';
 import Grid from 'material-ui/Grid';
 import Typography from 'material-ui/Typography';
 
-import { withStyles } from 'material-ui/styles';
+import {withStyles} from 'material-ui/styles';
 import * as colors from './Colors';
 
 import HelpOutlineIcon from 'material-ui-icons/HelpOutline';
-import CodeIcon from 'material-ui-icons/Code';
 
 
 const style = theme =>({
@@ -18,6 +17,9 @@ const style = theme =>({
     },
     text: {
         color: colors.text.icon
+    },
+    greenText: {
+        color: colors.primary.accent
     },
     about:{
 
@@ -58,17 +60,27 @@ class About extends Component{
             <Grid item sm={1} xs={12}>
 
             </Grid>
-            <Grid item sm={3}>
-                <CodeIcon className={classes.contentIcon}/>
-                <Typography type="display2" className={classes.text} >
-                     C#, Javascript
+            <Grid item sm={4}>
+                <Typography type="display2" className={classes.greenText} >
+                    C#
                 </Typography>
                 <Typography type="subheading" className={classes.text} >
-                    React Redux NodeJS Express MongoDB .NET MVC Unity
+                    .NET CORE 2, Unity
+                </Typography>
+                <Typography type="display2" className={classes.greenText} >
+                     Javascript
+                </Typography>
+                <Typography type="subheading" className={classes.text} >
+                    React, Redux, Flux, NodeJS, Express, MongoDB, RethinkDB, Socket.io, Passport.js
+                </Typography>
+                <Typography type="display2" className={classes.greenText} >
+                    Graphic
+                </Typography>
+                <Typography type="subheading" className={classes.text} >
+                    Photoshop, Illustrator, Spine
                 </Typography>
             </Grid>
         </Grid>
     }
 }
-
 export default withStyles(style)(About);

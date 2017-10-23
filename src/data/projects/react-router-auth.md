@@ -1,6 +1,6 @@
 ---
 name: react-router-auth
-title: React Router Authentication
+title: React Router Auth
 tags:
 - Fullstack
 - FrontEnd

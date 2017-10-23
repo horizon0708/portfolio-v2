@@ -1,15 +1,8 @@
 /// Displays Tags
 
-import React, { Component } from 'react';
-import data from '../../data/mockData.json';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
-import { withStyles } from 'material-ui/styles';
-import Typography from 'material-ui/Typography';
-import Chip from 'material-ui/Chip';
-import grey from 'material-ui/colors/grey';
-
+import {withStyles} from 'material-ui/styles';
 //  Components
 import Tag from './Tag';
 

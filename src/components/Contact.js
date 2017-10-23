@@ -6,7 +6,7 @@ import * as Colors from './Colors';
 import ContactForm from './Contact/ContactForm';
 import ChatBubbleOutlineIcon from 'material-ui-icons/ChatBubbleOutline';
 import MailOutlineIcon from 'material-ui-icons/MailOutline';
-import { withStyles } from 'material-ui/styles';
+import {withStyles} from 'material-ui/styles';
 
 const style = theme =>({
     root: {

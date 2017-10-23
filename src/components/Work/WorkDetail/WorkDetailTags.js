@@ -1,16 +1,7 @@
-import React, { Component } from 'react';
-
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
+import React, {Component} from 'react';
 import Chip from 'material-ui/Chip';
-import Grid from 'material-ui/Grid';
-import Button from 'material-ui/Button';
-import { withStyles } from 'material-ui/styles';
+import {withStyles} from 'material-ui/styles';
 import Typography from 'material-ui/Typography';
-
-import classnames from 'classnames';
-import IconButton from 'material-ui/IconButton';
-import Collapse from 'material-ui/transitions/Collapse';
-import Dialog, { DialogTitle } from 'material-ui/Dialog';
 
 import * as Colors from '../../Colors';
 
@@ -33,7 +24,7 @@ class WorkDetailTags extends Component{
     renderChips(){
         const { classes, work } = this.props;
 
-        return work.tags.map((x,i)=>{
+        return work.attributes.tags.map((x,i)=>{
             return <Chip
                 key={i}
                 label={x}
@@ -45,7 +36,7 @@ class WorkDetailTags extends Component{
         const { classes, work } = this.props;
 
         return <div> <Typography type="display1">
-            {work.title}
+            {work.attributes.title}
         </Typography>
         <div className={classes.row}>
             {this.renderChips()}

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Grid from 'material-ui/Grid';
 
 import Work from './Work';
@@ -12,8 +12,8 @@ import MoreAboutMe from './MoreAboutMe';
 import Scroll from 'react-scroll';
 
 import * as Colors from './Colors';
-import { lightBlue, lime } from 'material-ui/colors';
-import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import {lightBlue, lime} from 'material-ui/colors';
+import {createMuiTheme, MuiThemeProvider} from 'material-ui/styles';
 
 const Element    = Scroll.Element;
 

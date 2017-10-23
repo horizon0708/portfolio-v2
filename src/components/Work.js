@@ -1,21 +1,15 @@
-import React, { Component } from 'react';
-import data from '../data/mockData.json';
+import React, {Component} from 'react';
+import data from '../data/test.json';
 import Typography from 'material-ui/Typography';
-
-import PropTypes from 'prop-types';
 import InsertDriveFileIcon from 'material-ui-icons/InsertDriveFile';
-
 // Components
 import WorkTags from './Work/WorkTags';
 import WorkPanels from './Work/WorkPanels';
 import WorkDetail from './Work/WorkDetail/WorkDetail';
 import * as Colors from './Colors'
-
 // MaterialUI
 import Grid from 'material-ui/Grid';
-import { withStyles } from 'material-ui/styles';
-import KeyboardArrowLeft from 'material-ui-icons/KeyboardArrowLeft';
-import Button from 'material-ui/Button';
+import {withStyles} from 'material-ui/styles';
 
 const styles = theme =>({
     root: {
@@ -110,7 +104,7 @@ class Work extends Component{
         const filterOpt = this.state.tags.filter(x => x.clicked === true).map(x => x.name);
         if (filterOpt.length > 0) {
             const filteredWorks = data.filter((work, i) => {
-                return work.tags.some(r => filterOpt.indexOf(r) >= 0);
+                return work.attributes.tags.some(r => filterOpt.indexOf(r) >= 0);
             });
             this.setState({ works: filteredWorks }, ()=> console.log(this.state.works));
         } else {
@@ -142,7 +136,7 @@ class Work extends Component{
     }
 
     getTags() {
-        const allTags = [...new Set(data.map(a => a.tags).reduce((a, b) => a.concat(b)))];
+        const allTags = [...new Set(data.map(a => a.attributes.tags).reduce((a, b) => a.concat(b)))];
         return allTags.map(x => {
             return { name: x, clicked: false }
         });

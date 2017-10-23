@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
-
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
-import { withStyles } from 'material-ui/styles';
+import React, {Component} from 'react';
+import {withStyles} from 'material-ui/styles';
 import Grid from 'material-ui/Grid';
-import Typography from 'material-ui/Typography';
 import WorkCard from './WorkCard';
-import WorkDetail from './WorkDetail/WorkDetail';
 
 const styles = {
     card: {

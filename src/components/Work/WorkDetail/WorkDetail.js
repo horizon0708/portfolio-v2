@@ -1,17 +1,7 @@
-import React, { Component } from 'react';
-
-import Card, { CardActions, CardContent, CardMedia } from 'material-ui/Card';
-import Chip from 'material-ui/Chip';
+import React, {Component} from 'react';
 import Grid from 'material-ui/Grid';
 import Paper from 'material-ui/Paper';
-import Button from 'material-ui/Button';
-import { withStyles } from 'material-ui/styles';
-import Typography from 'material-ui/Typography';
-
-import classnames from 'classnames';
-import IconButton from 'material-ui/IconButton';
-import Collapse from 'material-ui/transitions/Collapse';
-import Dialog, { DialogTitle } from 'material-ui/Dialog';
+import {withStyles} from 'material-ui/styles';
 
 import WorkDetailTitle from './WorkDetailImage';
 import WorkDetailButtons from './WorkDetailButtons';
