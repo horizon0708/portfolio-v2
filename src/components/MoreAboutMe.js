@@ -91,23 +91,17 @@ class MoreAboutMe extends Component{
                                     </Typography>
                                 </td>
                             </tr>
-
-
-
                         </table>
-
                     </Grid>
                 </Grid>
-
-
             </Grid>
         </Grid>
     }
 }
-const moreAboutMeText1 = `I am tri-lingual! I can speak Korean because I was born in Korea. I can speak Japanese because one of my majors is in Japanese.`;
+const moreAboutMeText1 = `I am tri-lingual! I was born in Korea and I can speak Japanese because one of my majors is in Japanese.`;
 
-const moreAboutMeText2 = `I was always interested in programming and technology, but thought I would have to be a computer science major to learn it.
-In 2016, the research for a law school paper I was writing had so many repetitive tasks, so I looked into learning Python for some basic text parsing and got hooked since.`;
+const moreAboutMeText2 = `I have been always interested in programming, but thought I would have to be a comp-sci major to learn it.
+I started programming when the research for a law school paper I was writing had so many repetitive tasks that I looked into learning Python for some basic text parsing.`;
 
 const moreAboutMeText3 =  `I have always been a fan of playing and watching video games. Recently, I am more interested in making them.`;
 

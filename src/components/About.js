@@ -37,10 +37,10 @@ const style = theme =>({
     }
 });
 
-const aboutMeText = `I am a law school graduate who fell love with software development.
-I started teaching myself how to code using amazing online resources like FreeCodeCamp and Pluralsight.
-While I have mainly worked with C# and Javascript, I would be always happy to pick up a new language.
-I have 15+ publicly viewable projects that you can see below.`;
+const aboutMeText = `I am a self-taught law school graduate who is passionate about software development.
+I found that I love making apps and I would love to be able to do it for a living.
+I've taught myself C# and Javascript mainly by making projects with help of Pluralsight and countless StackOverflow answers.
+Some of the projects are available below.`;
 
 class About extends Component{
     render(){

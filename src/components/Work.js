@@ -117,7 +117,7 @@ class Work extends Component{
         const filterOpt = this.state.tags.filter(x => x.clicked === true).map(x => x.name);
         if(this.state.open){
             return <Typography type="body2" color="inherit" className={classes.tagStatusText}>
-                {`Showing ${this.state.work.title}. `} <a onClick={this.handleBackButton} className={classes.tagLinkText}>Click to go back to list.</a>
+                {`Showing ${this.state.work.attributes.title}. `} <a onClick={this.handleBackButton} className={classes.tagLinkText}>Click to go back to list.</a>
             </Typography>
         }
 
