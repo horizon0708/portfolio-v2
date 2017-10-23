@@ -2,7 +2,7 @@
 name: express-auth-api
 title: Express Api Auth
 tags: 
-- FullStack
+- Fullstack
 - FrontEnd
 - BackEnd
 - Express

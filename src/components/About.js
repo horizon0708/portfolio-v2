@@ -65,7 +65,7 @@ class About extends Component{
                     C#
                 </Typography>
                 <Typography type="subheading" className={classes.text} >
-                    .NET CORE 2, Unity
+                    .NET CORE, Unity
                 </Typography>
                 <Typography type="display2" className={classes.greenText} >
                      Javascript
@@ -74,7 +74,7 @@ class About extends Component{
                     React, Redux, Flux, NodeJS, Express, MongoDB, RethinkDB, Socket.io, Passport.js
                 </Typography>
                 <Typography type="display2" className={classes.greenText} >
-                    Graphic
+                    Graphics
                 </Typography>
                 <Typography type="subheading" className={classes.text} >
                     Photoshop, Illustrator, Spine

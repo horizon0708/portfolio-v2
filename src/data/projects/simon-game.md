@@ -6,7 +6,7 @@ tags:
 - Jquery
 - React
 - Redux
-Links:
+links:
     github: https://github.com/horizon0708/react-fcc-projects
 ---
 ## About

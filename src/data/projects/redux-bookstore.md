@@ -14,11 +14,8 @@ links:
     link: https://vast-tundra-70796.herokuapp.com/
 ---
 ## About
-React-Redux bookstore. Users can perform basic CRUD operations. 
-Users can add 
+A React-Redux bookstore I made as my first Redux/Fullstack project. Users can add books to the cart.
+Users can also perform basic CRUD operations like adding, editing and deleting books too.
 
 ## Goals
-- Learn how to create a react app with authentication. 
-
-## Post Mortem
-- I had ran into some problems because react-router had updated to v4.
+- Learn how Redux works with back-end.

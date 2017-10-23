@@ -35,7 +35,7 @@ class WorkDetail extends Component{
                                 </Grid>
                                 <Grid item xs={12}>
                                     <Grid container alignItems='flex-end'>
-                                        <Grid item>
+                                        <Grid item xs={12}>
                                             <WorkDetailButtons work={work} backButtonHandler={handleBackButton}/>
                                         </Grid>
                                     </Grid>
