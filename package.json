@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://horizon0708.github.io/portfolio-v2",
+  "homepage": "jameskim.co.nz",
   "dependencies": {
     "async": "^2.5.0",
     "front-matter": "^2.2.0",
