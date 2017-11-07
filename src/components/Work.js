@@ -75,10 +75,11 @@ class Work extends Component{
         },()=>{
             const oldTags = [...this.state.tags];
             const indexToReplace = oldTags.findIndex(x => x.name === "Featured");
+            console.log(indexToReplace);
             const tagToReplaceWith = { name: "Featured", clicked: true };
             const tempTags =  [...oldTags.slice(0, indexToReplace)
                 , tagToReplaceWith
-                , ...oldTags.slice(indexToReplace)];
+                , ...oldTags.slice(indexToReplace + 1)];
             console.log(this.state.tags);
             console.log(tempTags);
             this.setState({
