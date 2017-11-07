@@ -5,6 +5,7 @@ tags:
 - FrontEnd
 - React
 - Flux
+- Featured
 
 links:
     github: https://github.com/horizon0708/TodoReactFlux

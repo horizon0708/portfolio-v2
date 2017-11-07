@@ -11,6 +11,9 @@ import * as Colors from './Colors'
 import Grid from 'material-ui/Grid';
 import {withStyles} from 'material-ui/styles';
 
+var Set = require('es6-set/polyfill');
+
+
 const styles = theme =>({
     root: {
         paddingTop: 80,
@@ -47,7 +50,7 @@ const styles = theme =>({
     }
 });
 
-const worktext = `Personal projects ranging from simple codepens to Fullstack projects. 
+const worktext = `Personal projects ranging from simple Codepens to Fullstack projects. 
 You can use the filter below to filter by tags, 
 and click on a project to find out more about the project.`;
 
@@ -69,11 +72,22 @@ class Work extends Component{
     componentWillMount() {
         this.setState({
             tags: this.getTags()
-        }, () => console.log(this.state));
+        },()=>{
+            const oldTags = [...this.state.tags];
+            const indexToReplace = oldTags.findIndex(x => x.name === "Featured");
+            const tagToReplaceWith = { name: "Featured", clicked: true };
+            const tempTags =  [...oldTags.slice(0, indexToReplace)
+                , tagToReplaceWith
+                , ...oldTags.slice(indexToReplace)];
+            console.log(this.state.tags);
+            console.log(tempTags);
+            this.setState({
+                tags: tempTags
+            }, ()=> this.filterWorks())
+        });
     }
 
     handleCardClick(work){
-        console.log(work);
         this.setState({
             work: work
         }, ()=>{
@@ -106,7 +120,7 @@ class Work extends Component{
             const filteredWorks = data.filter((work, i) => {
                 return work.attributes.tags.some(r => filterOpt.indexOf(r) >= 0);
             });
-            this.setState({ works: filteredWorks }, ()=> console.log(this.state.works));
+            this.setState({ works: filteredWorks });
         } else {
             this.setState({ works: data });
         }

@@ -2,9 +2,10 @@
   "name": "portfolio-v2",
   "version": "0.1.0",
   "private": true,
-  "homepage": "jameskim.co.nz",
+  "homepage": "http://jameskim.co.nz",
   "dependencies": {
     "async": "^2.5.0",
+    "es6-set": "^0.1.5",
     "front-matter": "^2.2.0",
     "fs": "^0.0.1-security",
     "gh-pages": "^1.0.0",
@@ -20,11 +21,13 @@
     "typeface-roboto": "0.0.41"
   },
   "scripts": {
-    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-polyfill": "^6.26.0"
   }
 }

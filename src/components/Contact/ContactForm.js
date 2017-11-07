@@ -33,12 +33,10 @@ class ContactForm extends Component{
     }
 
     handleChange = name => event => {
-        console.log( event.target.value);
         this.setState({
             [name]: event.target.value,
         },() =>{
             this.getValidationState();
-            console.log(this.state.emailValidation);
         });
     };
 
@@ -56,6 +54,7 @@ class ContactForm extends Component{
                 fullWidth={true}
                 required
                 id="email"
+                name="email"
                 onChange={this.handleChange("email")}
                 label="email"
                 className={classes.textField}
@@ -70,6 +69,7 @@ class ContactForm extends Component{
                 multiline
                 id="message"
                 label="message"
+                name="message"
                 className={classes.textField}
                 margin="normal" />
 

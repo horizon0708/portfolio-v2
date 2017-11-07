@@ -60,6 +60,7 @@ class MoreAboutMe extends Component{
 
                     <Grid item sm={12} xs={12} >
                         <table >
+                            <tbody>
                             <tr>
                                 <td className={classes.iconTd}>
                                     <CodeIcon className={classes.contentIcon}/>
@@ -91,6 +92,7 @@ class MoreAboutMe extends Component{
                                     </Typography>
                                 </td>
                             </tr>
+                            </tbody>
                         </table>
                     </Grid>
                 </Grid>
@@ -100,7 +102,7 @@ class MoreAboutMe extends Component{
 }
 const moreAboutMeText1 = `I am tri-lingual! I was born in Korea and I can speak Japanese because one of my majors is in Japanese.`;
 
-const moreAboutMeText2 = `I have been always interested in programming, but thought I would have to be a comp-sci major to learn it.
+const moreAboutMeText2 = `I have always been interested in programming, but thought I would have to be a comp-sci major to learn it.
 I started programming when the research for a law school paper I was writing had so many repetitive tasks that I looked into learning Python for some basic text parsing.`;
 
 const moreAboutMeText3 =  `I have always been a fan of playing and watching video games. Recently, I am more interested in making them.`;

@@ -44,11 +44,9 @@ class Header extends React.Component{
                 <AppBar position="static" className={classes.barColor} >
                     <Toolbar className={classes.gutter}>
                         <Link to="hero" smooth={true} offset={50} duration={500} >
-                            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" style={{"color": "#FFFFFF"}}>
                                 <Typography type="title" color="inherit" className={classes.flex}>
-                                    James's Portfolio
+                                    James' Portfolio
                                 </Typography>
-                            </IconButton>
                         </Link>
 
 

@@ -4,6 +4,7 @@ title: VSCode Snippet Helper
 tags: 
 - FrontEnd
 - React
+- Featured
 links:
     link: https://horizon0708.github.io/vscode-snippet-helper/
     github: https://github.com/horizon0708/vscode-snippet-helper

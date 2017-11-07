@@ -25,10 +25,9 @@ class WorkPanels extends Component{
         const { works, handleCardClick  } = this.props;
         if(works){
             return works.map((x,i)=>{
-                return <Grid item xs={12} sm={6} md={4} >
+                return <Grid item xs={12} sm={6} md={4} key={i}>
                     {<WorkCard
                         handleCardClick={handleCardClick}
-                        key={i}
                         work={x}
                     />}
                 </Grid>

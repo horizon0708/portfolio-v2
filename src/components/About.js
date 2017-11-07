@@ -39,7 +39,7 @@ const style = theme =>({
 
 const aboutMeText = `I am a self-taught law school graduate who is passionate about software development.
 I found that I love making apps and I would love to be able to do it for a living.
-I've taught myself C# and Javascript mainly by making projects with help of Pluralsight and countless StackOverflow answers.
+So far, I've taught myself C# and Javascript mainly by making projects, big and small, with help of Pluralsight and countless StackOverflow answers.
 Some of the projects are available below.`;
 
 class About extends Component{
@@ -60,12 +60,12 @@ class About extends Component{
             <Grid item sm={1} xs={12}>
 
             </Grid>
-            <Grid item sm={4}>
+            <Grid item sm={4} xs={12}>
                 <Typography type="display2" className={classes.greenText} >
                     C#
                 </Typography>
                 <Typography type="subheading" className={classes.text} >
-                    .NET CORE, Unity
+                    .NET Core, Unity
                 </Typography>
                 <Typography type="display2" className={classes.greenText} >
                      Javascript
